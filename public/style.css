@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding-block: 2rem;
+}
+
+code {
+  background: #d0d0d5;
+}
+
+h1 {
+  text-align: center;
+}
+
+canvas {
+  margin: auto;
+  background-color: #d0d0d5;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  overflow-x: auto;
+  padding-inline: 5px;
+}
+
+#rankboard {
+  width: 640px;
+  margin-inline: auto;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#scoreboard {
+  width: 640px;
+  margin-inline: auto;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/*footer*/
+.footer {
+  padding-block: 1rem;
+  background-color: black;
+}
+.footer_contenido {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  max-width: 200px;
+}
+.footer_contenido p {
+  margin-bottom: 0;
+}
+.logo {
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/*pad*/
+
+.dpad {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px;
+  gap: 0px;
+  touch-action: manipulation;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+  background: #444;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #555;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  background: #222;
+}
+
+/* Posiciones */
+.up {
+  grid-column: 2;
+  grid-row: 1;
+}
+.left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.right {
+  grid-column: 3;
+  grid-row: 2;
+}
+.down {
+  grid-column: 2;
+  grid-row: 3;
+}
